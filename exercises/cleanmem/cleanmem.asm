@@ -21,6 +21,8 @@ MemLoop:
     dex                     ; X--
     bne MemLoop             ; while X != 0
 
+    sta $0,X                ; Ensure $00 is zeroed out at the end
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Fill ROM size to exactly 4KB
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
